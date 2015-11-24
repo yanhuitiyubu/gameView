@@ -1,87 +1,5 @@
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>北京邮电大学研究生会体育部-足球球队列表</title>
-	<link rel="stylesheet" href="../css/base/bootstrap.min.css"/>
-	<link rel="stylesheet" href="../css/base/font-awesome.min.css"/>
-	<link rel="stylesheet" href="../css/base/base.css"/>
-	<link rel="stylesheet" href="../css/sites/teamlist.css"/>
-
-</head>
-
-<body>
-	<!---意见反馈-->
-	<div id="feedbackall">
-
-		<div id="feedbacktab">
-			<i class="fa fa-angle-double-left"></i>
-		</div>
-
-
-		<div id="feedback">
-			<div class="section">
-
-				<h6>意见反馈</h6>
-
-				<p class="message">欢迎您访问本网站！您可以在下面提出任何问题与建议，并请写出您的联系方式以便工作人员联系您！</p>
-
-				<textarea></textarea>
-
-				<a class="submit" href="#">提交</a>
-			</div>
-
-		</div>
-	</div>
-
-
-	<div id='goToTop'>
-		<a href='#'><i class="fa fa-angle-up"></i></a>
-	</div>
-
-	<!--导航-->
-	<div class="home_nav">
-		<div class="home_nav_top">
-			<div class="nav_top_logo" >
-				<img src="../images/buptyh.png" alt="北京邮电大学研究生会"/>
-			</div>
-
-			<div class="nav_top_title">
-				<h1>北京邮电大学研究生会</h1>
-			</div>
-
-			<div class="nav_top_right">
-				<img class="nav_top_picbasket" src="../images/nav_basketball.png" alt=""/>
-				<img class="nav_top_picfoot" src="../images/nav_football.png" alt=""/>
-
-				<p class="top_right_ti">体</p>
-				<p class="top_right_yu">育</p>
-				<p class="top_right_bu">部</p>
-			</div>
-		</div>
-		<div class="home_nav_footer">
-			<ul class="nav_footer_list">
-				<li class="footer_list_item"><a href="home.html">首页</a></li>
-				<li class="footer_list_item"><a href="#">新闻</a></li>
-				<li class="footer_list_item">
-					<a href="#">赛程</a>
-					<ul class="footer_list_second" style="display:none;">
-						<li><a href="#">篮球</a></li>
-						<li><a href="#">足球</a></li>
-					</ul>
-				</li>
-				<li class="footer_list_item">
-					<a href="#">球队</a>
-					<ul class="footer_list_second" style="display:none;">
-						<li><a href="#">篮球</a></li>
-						<li><a href="#">足球</a></li>
-					</ul>
-				</li>
-				<li class="footer_list_item"><a href="#">排名</a></li>
-			</ul>
-		</div>
-
-	</div>
-
+{%extends 'base.html'%}
+{%block content%}
 	<!--content开始-->
 	<div class="contentBox">
 		<!-- title-->
@@ -362,12 +280,7 @@
 		</div>
 
 	</div>
-
-</body>
-
-<script src="../js/base/jquery.min.js"></script>
-<script src="../js/base/bootstrap.min.js"></script>
-<script src="../js/base/base.js"></script>
-<script src="../js/sites/teamlist.js"></script>
-
-</html>
+{%endblock%}
+{%block customjs%}
+<script src="{{ STATIC_URL }}js/sites/teamlist.js"></script>
+{%endblock%}
