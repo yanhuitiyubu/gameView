@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>北京邮电大学研究生会体育部-首页</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base/base.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/sites/home.css">
+    {% block customstyle %}{% endblock %}
+</head>
+
+
+
+<body>
+	<!---意见反馈-->
+	<div id="feedbackall">
+		<div id="feedbacktab">
+	        <i class="fa fa-angle-double-left"></i>
+	    </div>
+		<div id="feedback">
+			<div class="section">
+		        <h6>意见反馈</h6>
+		        <p class="message">欢迎您访问本网站！您可以在下面提出任何问题与建议，并请写出您的联系方式以便工作人员联系您！</p>
+		        <textarea></textarea>
+		        <a class="submit" href="#">提交</a>
+	    	</div>
+		</div>
+	</div>
+	<div id='goToTop'>
+		<a href='#'><i class="fa fa-angle-up"></i></a>
+	</div>
+	<!--导航-->
+	<div class="home_nav">
+		<div class="home_nav_top">
+			<div class="nav_top_logo" >
+				<img src="{{ STATIC_URL }}images/buptyh.png" alt="北京邮电大学研究生会"/>
+			</div>
+			<div class="nav_top_title">
+				<h1>北京邮电大学研究生会</h1>
+			</div>
+			<div class="nav_top_right">
+				<img class="nav_top_picbasket" src="{{ STATIC_URL }}images/nav_basketball.png" alt=""/>
+				<img class="nav_top_picfoot" src="{{ STATIC_URL }}images/nav_football.png" alt=""/>
+				<p class="top_right_ti">体</p>
+				<p class="top_right_yu">育</p>
+				<p class="top_right_bu">部</p>
+			</div>
+		</div>
+		<div class="home_nav_footer">
+			<ul class="nav_footer_list">
+				<li class="footer_list_item"><a href="home.html">首页</a></li>
+				<li class="footer_list_item"><a href="#">新闻</a></li>
+				<li class="footer_list_item">
+					<a href="#">赛程</a>
+					<ul class="footer_list_second" style="display:none;">
+						<li><a href="#">篮球</a></li>
+						<li><a href="#">足球</a></li>
+					</ul>
+				</li>
+				<li class="footer_list_item">
+					<a href="#">球队</a>
+					<ul class="footer_list_second" style="display:none;">
+						<li><a href="#">篮球</a></li>
+						<li><a href="#">足球</a></li>
+					</ul>
+				</li>
+				<li class="footer_list_item">
+					<a href="#">排名</a>
+					<ul class="footer_list_second" style="display:none;">
+						<li><a href="#">篮球</a></li>
+						<li><a href="#">足球</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+    {% block content %}{% endblock %}
+</body>
+    <script src="{{ STATIC_URL }}js/base/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/base/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/base/base.js"></script>
+    <script src="{{ STATIC_URL }}js/sites/home.js"></script>
+</html>
